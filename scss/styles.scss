@@ -651,11 +651,12 @@ footer {
         color: #fff;
         font-weight: 500;
     }
+    #contact-email {
+      font-size:24px;
+      color:white;
+    }
 }
-#contact-email{
-  font-size:24px;
-  color:white;
-}
+
 #contact-form {
     max-width: 500px;
     margin: 0 auto;
