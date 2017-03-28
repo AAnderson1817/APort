@@ -42,6 +42,7 @@ $border: #dcd9d9;
 // Define text colors
 $heading: #374054;
 $text: #74808a;
+$email: #fff;
 
 /*
     ---------------------
@@ -653,7 +654,7 @@ footer {
         font-size:24px;
 
         &hover {
-          color:darken($h2,20%);
+          color:darken($email,20%);
         }
     }
 }
