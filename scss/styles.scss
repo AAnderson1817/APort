@@ -20,6 +20,7 @@
         9. Skills Styles
         10. Contact Styles
         11. Media Queries
+        12. Custom Styles
 */
 
 /*
@@ -618,7 +619,9 @@ footer {
     }
     a{
       color: $base-color;
-      &:hover{$base-color-hover};
+      &:hover{
+        color: $base-color-hover;
+      }
     }
 }
 
@@ -878,4 +881,10 @@ footer {
         }
     }
 
+}
+
+// Custom Styles
+
+#footericon{
+  font-size:32px;
 }
