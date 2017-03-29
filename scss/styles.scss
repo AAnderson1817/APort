@@ -29,21 +29,26 @@
 */
 
 // Define base and accent colors
-$base-color: rgba(43, 9, 104, 0.8);
+$base-color: #2b0968;
 $base-color-hover: darken($base-color, 10%);
+$base-color-transparent: rgba(43, 9, 104, .8);
+$base-color-tint: #FFEEFF;
+$accent-color: #FF9800;
 
 // Define background colors
 $background: #fff;
 $background-alt: #f2f2f5;
+$background-icon: lighten($base-color, 30%);
+$background-line: lighten($base-color, 40%);
 
 // Define border colors
 $border: #dcd9d9;
 
 // Define text colors
-$heading: #374054;
-$text: #74808a;
+$heading: black;
+$text: black;
 $email: #fff;
-$email-hover: darken($email,20%);
+$email-hover: rgba(255, 152, 0, 1);
 
 /*
     ---------------------
@@ -236,7 +241,7 @@ footer {
     @include transition();
 
     &:hover {
-        color: $base-color;
+        color: $accent-color;
         background: #fff;
         text-decoration: none;
     }
@@ -261,12 +266,12 @@ footer {
         position: absolute;
         content: '';
         top: 100%;
-        height: 1px;
-        width: 50px;
+        height: 3px;
+        width: 75px;
         left: 0;
         right: 0;
         margin: 0 auto;
-        background: $base-color;
+        background: $accent-color;
     }
 }
 
@@ -321,7 +326,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+    background: ($base-color-transparent);
     z-index: 1;
 }
 
@@ -378,7 +383,7 @@ footer {
     border-bottom: 1px solid $border;
 
     h2 {
-        color: $heading;
+        color: $background-icon;
     }
 
     p {
@@ -399,7 +404,16 @@ footer {
     border-bottom: 1px solid $border;
 
     h2 {
-        color: $heading;
+        color: $background-icon;
+
+        &:hover {
+          display: inline-block;
+          vertical-align: middle;
+          -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+          box-shadow: 0 0 1px transparent;
+          position: relative;
+        }
     }
 }
 
@@ -417,7 +431,7 @@ footer {
         right: auto;
         height: 100%;
         width: 3px;
-        background: $base-color;
+        background: $accent-color;
         z-index: 0;
     }
 
@@ -426,8 +440,8 @@ footer {
         content: '';
         width: 3px;
         height: 40px;
-        background: $base-color;
-        background: linear-gradient(to bottom, $base-color, rgba($base-color, 0));
+        background: $accent-color;
+        background: linear-gradient(to bottom, $accent-color, rgba($accent-color, 0));
         top: 100%;
         left: 303px;
     }
@@ -444,7 +458,7 @@ footer {
     h3 {
         font-size: 1.5em;
         font-weight: 300;
-        color: $heading;
+        color: $accent-color;
         display: inline-block;
         margin: 0;
     }
@@ -452,7 +466,7 @@ footer {
     h4 {
         font-size: 1.2em;
         font-weight: 300;
-        color: #7e8890;
+        color: black;
         margin: 0 0 15px 0;
     }
 
@@ -475,7 +489,7 @@ footer {
     color: #fff;
     width: 50px;
     height: 50px;
-    background: $base-color;
+    background: $background-icon;
     border-radius: 50%;
     float: left;
     z-index: 99;
@@ -510,7 +524,7 @@ footer {
     text-align: center;
 
     h2 {
-        color: $heading;
+        color: $background-icon;
         margin-bottom: 50px;
     }
 }
@@ -526,7 +540,7 @@ footer {
         font-weight: 500;
         float: left;
         margin: 0;
-        color: $heading;
+        color: $accent-color;
     }
 
     span {
@@ -564,7 +578,7 @@ footer {
     text-align: center;
 
     h2 {
-        color: $heading;
+        color: $background-icon;
         margin-bottom: 50px;
     }
 }
@@ -592,7 +606,7 @@ footer {
     h3 {
         font-size: 1.5em;
         font-weight: 300;
-        color: $heading;
+        color: $accent-color;
         margin: 0 0 15px 0;
     }
 
@@ -614,7 +628,7 @@ footer {
     text-align: center;
 
     h2 {
-        color: $heading;
+        color: $background-icon;
         margin-bottom: 50px;
     }
 
