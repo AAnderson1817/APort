@@ -1,4 +1,3 @@
-
 {
   "name": "devportfolio-template",
   "version": "1.1.3",
@@ -24,5 +23,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "hover.css": "^2.2.0"
   }
 }
